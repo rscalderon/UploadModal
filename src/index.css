@@ -2,10 +2,9 @@
   font-family: Arial, sans-serif;
   line-height: 1.5;
   font-weight: bold;
-
   color-scheme: light dark;
   color: rgba(19, 42, 74);
-  background-color: rgba(179, 179, 179);
+  background-color: rgb(179, 179, 179);
 }
 
 @media (prefers-color-scheme: light) {

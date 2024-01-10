@@ -1,17 +1,83 @@
 #root {
   margin: auto;
-  text-align: center;
 }
 
 #upload-modal {
   background-color: rgb(255, 255, 255);
+  padding: 3em;
+  border-radius: 25px;
   height: 80vh;
   width: 80vw;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+
+hr {
+  color: rgb(204, 206, 218);
+}
+
+.Testing-Center {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.green {
+  color: rgb(0, 156, 93);
+}
+
+#importName {
+  border: 2px solid rgb(204, 206, 218);
+  border-radius: 5px;
+}
+
+#File-upload-container {
+  border-style: solid;
+  padding: 10px;
+  border-radius: 5px;
+  border-color: rgb(189, 189, 189);
+}
+
+#FileUploader {
+  border-color: rgb(176, 176, 176);
+}
+
+#header-container {
+  position: relative;
+}
+
+#header-container hr {
+  position: absolute;
+  bottom: 0; /* Align to the bottom of the header-container */
+  width: 100%; /* Make the hr the full width of the header-container */
+  border: none; /* Remove the default border */
+  height: 1px; /* Set the desired thickness of your line */
+  background-color: #000; /* Set to desired color for your line */
+  margin: 0; /* Ensures there's no extra space outside the hr */
+}
+
+#modal-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#close-button {
+  align-self: flex-start;
 }
 
 #modal-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 3vw;
+}
+
+#modal-footer {
+  text-align: center;
 }
 
 p {
@@ -26,8 +92,10 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 2em;
+#cancel-button {
+  border: 2px solid rgb(255, 167, 60);
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 167, 60);
 }
 
 button {
