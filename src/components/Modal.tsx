@@ -22,6 +22,7 @@ function Modal() {
           <p>No Elapsed Dates!</p>
           <hr />
           <p>Tolerance Window:</p>
+          <p>Toggle ON/OFF | Select Tolerance Level</p>
         </div>
         <div id='right-column'>
           {/* <h2>RIGHT</h2> */}
@@ -41,7 +42,7 @@ function Modal() {
               <p>Location Checking:</p>
               <p>All Available!</p>
               <hr />
-              <div className='form-group'>
+              <div className='client-form'>
                 <label>Client:</label>
                 <div className='radio-buttons'>
                   <input
@@ -64,20 +65,30 @@ function Modal() {
                     name='socialDistancing'
                     value='Multiple'
                   />
-                  <hr />
+                  <br />
+                  <label htmlFor='TestingCenter1'>TestingCenter1</label>
+                  <select id='TestingCenter1'></select>
+                  <br />
+                  <label htmlFor='TestingCenter2'>TestingCenter2</label>
+                  <select id='TestingCenter2'></select>
+                  <br />
+                  <label htmlFor='TestingCenter3'>TestingCenter3</label>
+                  <select id='TestingCenter3'></select>
+                  <br />
+                  <label htmlFor='TestingCenter4'>TestingCenter4</label>
+                  <select id='TestingCenter4'></select>
                 </div>
               </div>
             </div>
           </div>
-          <div id='modal-footer'>
-            <p>
-              Data in the import file is correct. Please press Continue to
-              import.
-            </p>
-            <button>Continue Import</button>
-            <button>Cancel</button>
-          </div>
         </div>
+      </div>
+      <div id='modal-footer'>
+        <p>
+          Data in the import file is correct. Please press Continue to import.
+        </p>
+        <button>Continue Import</button>
+        <button>Cancel</button>
       </div>
     </div>
   );
