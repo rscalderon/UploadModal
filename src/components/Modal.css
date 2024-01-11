@@ -10,10 +10,19 @@
   width: 80vw;
 }
 
+.BoldText {
+  font-weight: bold;
+}
+
 h1 {
   font-size: 1.5em;
   margin: 0;
   text-align: center;
+}
+
+#UploadButton {
+  align-self: center;
+  margin-bottom: 0px;
 }
 
 hr {
@@ -30,20 +39,27 @@ hr {
   color: rgb(0, 156, 93);
 }
 
-#importName {
+#importNameContainer {
   border: 2px solid rgb(204, 206, 218);
-  border-radius: 5px;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 #File-upload-container {
+  display: flex;
+  flex-direction: column;
   border-style: solid;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 15px;
+  border-radius: 10px;
   border-color: rgb(189, 189, 189);
 }
 
 #FileUploader {
-  border-color: rgb(176, 176, 176);
+  border-color: rgb(176, 176, 176) !important;
+  color: rgba(19, 42, 74) !important;
+}
+
+#filesContainer {
 }
 
 #header-container {
@@ -80,9 +96,9 @@ hr {
   text-align: center;
 }
 
-p {
+/* p {
   font-weight: bold;
-}
+} */
 
 body {
   margin: 0;

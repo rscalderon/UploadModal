@@ -1,12 +1,31 @@
-import './Modal.css';
+import { useState } from 'react';
 import { FileUploader } from 'react-drag-drop-files';
 
+import UploadedFile from './UploadedFile';
+import Upload from './Upload';
+
+import Icon from '../assets/Icon.png';
+import './Modal.css';
+
+// Parent Modal component
 function Modal() {
+  // Set uploaded files as state
+  const [files, setFile] = useState<any>([]);
+  // Update state and trigger re-render every time a new file is uploaded
+  const handleChange = (newFile: any) => setFile(newFile);
+
+  // Build array of file components from list of uploaded files
+  const fileComponents = Object.values(files).map((file: any, i) => (
+    <UploadedFile file={file} key={`File-${i}-${file}`} />
+  ));
+
   return (
     <div id='upload-modal'>
       {/* Modal header */}
       <header id='modal-header'>
-        <button id='close-button'>X</button>
+        <button id='close-button' onClick={() => console.log('Close modal')}>
+          X
+        </button>
         <div id='header-container'>
           <h1>Document Upload</h1>
           <hr />
@@ -15,31 +34,45 @@ function Modal() {
       {/* Modal body */}
       <div id='modal-content'>
         <section id='left-column'>
-          {/* <h2>LEFT</h2> */}
-          <div id='importName'>
-            <label htmlFor='importName'>Select Import Name:</label>
-            <select></select>
+          {/* Left column */}
+          <div id='importNameContainer'>
+            <label htmlFor='importName' className='BoldText'>
+              Select Import Name:
+            </label>
+            <select>
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+              <option>Option 4</option>
+            </select>
           </div>
           <hr />
-          <p>Select a manifest you'd like to import</p>
+          <p className='BoldText'>Select a manifest you'd like to import</p>
           <div id='File-upload-container'>
             <FileUploader
               id='FileUploader'
-              label='Drag & Drop Here Or Browse'
+              handleChange={handleChange}
+              // label='Drag & Drop Here Or Browse'
+              multiple={true}
+              children={<Upload />}
             />
-            <button>Upload Manifest</button>
+            <button id='UploadButton'>Upload Manifest</button>
           </div>
+          <div id='filesContainer'>{fileComponents}</div>
           <hr />
-          <p>Elapse Data Checking</p>
+          <p className='BoldText'>Elapse Data Checking</p>
           <p className='green'>No Elapsed Dates!</p>
           <hr />
-          <p>Tolerance Window:</p>
+          <p className='BoldText'>Tolerance Window:</p>
+          <img className='clockIcon' src={Icon} />
           <p>Toggle ON/OFF | Select Tolerance Level</p>
         </section>
         <section id='right-column'>
-          {/* <h2>RIGHT</h2> */}
+          {/* Right column */}
           <div className='form-group'>
-            <label>Split schedule using social distancing?</label>
+            <label className='BoldText'>
+              Split schedule using social distancing?
+            </label>
             <div className='radio-buttons'>
               <input
                 type='radio'
@@ -51,11 +84,11 @@ function Modal() {
               <input type='radio' id='no' name='socialDistancing' value='no' />
               <label htmlFor='no'>No</label>
               <hr />
-              <p>Location Checking:</p>
+              <p className='BoldText'>Location Checking:</p>
               <p className='green'>All Available!</p>
               <hr />
               <div id='client-form'>
-                <label>Client:</label>
+                <label className='BoldText'>Client:</label>
                 <div className='radio-buttons'>
                   <input
                     type='radio'
@@ -79,19 +112,43 @@ function Modal() {
                   />
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter1'>TestingCenter1</label>
-                    <select id='TestingCenter1'></select>
+                    <select id='TestingCenter1'>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                    </select>
+                    <img className='clockIcon' src={Icon} />
                   </div>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter2'>TestingCenter2</label>
-                    <select id='TestingCenter2'></select>
+                    <select id='TestingCenter2'>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                    </select>
+                    <img className='clockIcon' src={Icon} />
                   </div>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter3'>TestingCenter3</label>
-                    <select id='TestingCenter3'></select>
+                    <select id='TestingCenter3'>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                    </select>
+                    <img className='clockIcon' src={Icon} />
                   </div>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter4'>TestingCenter4</label>
-                    <select id='TestingCenter4'></select>
+                    <select id='TestingCenter4'>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                    </select>
+                    <img className='clockIcon' src={Icon} />
                   </div>
                 </div>
               </div>
@@ -100,7 +157,7 @@ function Modal() {
         </section>
       </div>
       <footer id='modal-footer'>
-        <p>
+        <p className='BoldText'>
           Data in the import file is correct. Please press Continue to import.
         </p>
         <button>Continue Import</button>
