@@ -17,7 +17,7 @@ function UploadedFile({ file }: Props) {
     <>
       <hr />
       <div className='UploadedFile'>
-        <img src={UploadedImg} />
+        <img src={UploadedImg} className='Uploaded-File-Logo' />
         <div>
           <p>
             {file.name} {'  '}
