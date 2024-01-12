@@ -102,66 +102,36 @@ function Modal() {
                 <div className='radio-buttons'>
                   <input
                     type='radio'
-                    id='yes'
-                    name='socialDistancing'
-                    value='yes'
-                  />
-                  <label htmlFor='Single'>Single</label>
-                  <input
-                    type='radio'
                     id='Single'
                     name='socialDistancing'
                     value='Single'
                   />
-                  <label htmlFor='Multiple'>Multiple</label>
+                  <label htmlFor='Single'>Single</label>
                   <input
                     type='radio'
                     id='Multiple'
                     name='socialDistancing'
                     value='Multiple'
                   />
+                  <label htmlFor='Multiple'>Multiple</label>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter1'>Testing Center 1</label>
                     <BasicSelect />
-                    {/* <select id='TestingCenter1'>
-                      <option>Option 1</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                      <option>Option 4</option>
-                    </select> */}
                     <img className='clockIcon' src={Icon} />
                   </div>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter2'>Testing Center 2</label>
                     <BasicSelect />
-                    {/* <select id='TestingCenter2'>
-                      <option>Option 1</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                      <option>Option 4</option>
-                    </select> */}
                     <img className='clockIcon' src={Icon} />
                   </div>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter3'>Testing Center 3</label>
                     <BasicSelect />
-                    {/* <select id='TestingCenter3'>
-                      <option>Option 1</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                      <option>Option 4</option>
-                    </select> */}
                     <img className='clockIcon' src={Icon} />
                   </div>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter4'>Testing Center 4</label>
-                    <BasicSelect/>
-                    {/* <select id='TestingCenter4'>
-                      <option>Option 1</option>
-                      <option>Option 2</option>
-                      <option>Option 3</option>
-                      <option>Option 4</option>
-                    </select> */}
+                    <BasicSelect />
                     <img className='clockIcon' src={Icon} />
                   </div>
                 </div>
