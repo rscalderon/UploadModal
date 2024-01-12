@@ -14,7 +14,7 @@
   padding-bottom: 3em;
   border-radius: 25px;
   height: fit-content;
-  width: 80vw;
+  width: 70vw;
 }
 
 .BoldText {
@@ -44,6 +44,7 @@ hr {
 .Testing-Center {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
