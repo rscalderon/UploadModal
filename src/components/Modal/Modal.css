@@ -14,7 +14,26 @@
   padding-bottom: 3em;
   border-radius: 25px;
   height: fit-content;
-  width: 70vw;
+  width: 80vw;
+}
+
+.Testing-Center-Right {
+  display: flex;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+#demo-simple-select {
+  min-width: 10vw;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: rgba(19, 42, 74);
+  font-size: 0.8em;
+  border-radius: 50px;
+}
+
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  border-radius: 10px !important;
 }
 
 .BoldText {
@@ -106,8 +125,10 @@ hr {
 
 #modal-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.4fr 1fr;
   gap: 5vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
 }
 
 #modal-footer {
