@@ -1,0 +1,154 @@
+#root {
+  margin: auto;
+  font-size: small;
+}
+
+.clockIcon {
+  max-width: 30px;
+  max-height: 30px;
+}
+
+#upload-modal {
+  background-color: rgb(255, 255, 255);
+  padding: 2em;
+  padding-bottom: 3em;
+  border-radius: 25px;
+  height: fit-content;
+  width: 80vw;
+}
+
+.BoldText {
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+
+#UploadButton {
+  align-self: center;
+  margin-bottom: 0px;
+}
+
+hr {
+  /* background-color: rgb(255, 255, 255); */
+  max-width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.Testing-Center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.green {
+  color: rgb(0, 156, 93);
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#importNameContainer {
+  border: 2px solid rgb(204, 206, 218);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#File-upload-container {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  padding: 15px;
+  border-radius: 10px;
+  border-color: rgb(189, 189, 189);
+  padding-bottom: 10px;
+}
+
+#tolerance-window {
+  margin-bottom: 0px;
+}
+
+#FileUploader {
+  border-color: rgb(176, 176, 176) !important;
+  color: rgba(19, 42, 74) !important;
+}
+
+#filesContainer {
+  max-height: 80px;
+  overflow: auto;
+}
+
+#header-container hr {
+  max-width: 300px;
+}
+
+#modal-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+#close-button {
+  margin: 0px;
+  align-self: flex-start;
+  padding: 6px;
+  padding-bottom: 2px;
+  /* padding-top: 4px; */
+}
+
+#modal-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+}
+
+#modal-footer {
+  text-align: center;
+}
+
+.radio-buttons {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#cancel-button {
+  border: 2px solid rgb(255, 167, 60);
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 167, 60);
+}
+
+button {
+  border-radius: 8px;
+  margin: 0.5em;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: rgba(19, 42, 74);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  background-color: #19a8ef;
+  filter: drop-shadow(0 0 0.5em #646cffaa);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

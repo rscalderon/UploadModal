@@ -1,0 +1,16 @@
+#UploadFile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dashed rgb(204, 206, 218);
+  border-radius: 5px;
+  padding: 40px;
+}
+
+#FileUploader {
+  margin: 0px;
+}
+
+#UploadImg {
+  max-width: 20px;
+}

@@ -1,0 +1,19 @@
+.UploadedFile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: lightgray;
+}
+
+.Uploaded-File-Logo {
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+.Left-Uploaded-File {
+  display: flex;
+}
+
+.Progress-Bar {
+  max-width: 100%;
+}
