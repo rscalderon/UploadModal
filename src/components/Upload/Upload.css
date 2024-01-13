@@ -4,7 +4,7 @@
   align-items: center;
   border: 1px dashed rgb(204, 206, 218);
   border-radius: 5px;
-  padding: 40px;
+  padding: 25px;
 }
 
 #FileUploader {
@@ -12,5 +12,6 @@
 }
 
 #UploadImg {
-  max-width: 20px;
+  max-width: 17px;
+  padding-bottom: 7px;
 }

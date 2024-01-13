@@ -12,15 +12,25 @@
   background-color: rgb(255, 255, 255);
   padding: 2em;
   padding-bottom: 3em;
-  border-radius: 25px;
+  border-radius: 20px;
   height: fit-content;
-  width: 80vw;
+  width: 75vw;
+}
+
+.vl {
+  border-right: 1px solid rgba(19, 42, 74);
+  height: 1.5rem;
+  width: 1px;
+  padding-right: 15px;
+  margin-right: 15px;
 }
 
 .Testing-Center-Right {
+  justify-self: end;
   display: flex;
   align-items: center;
   margin-top: 2vh;
+  padding-left: 20px;
 }
 
 #demo-simple-select {
@@ -50,6 +60,7 @@ h1 {
 
 #UploadButton {
   align-self: center;
+  /* font-weight: bold; */
   margin-bottom: 0px;
 }
 
@@ -63,7 +74,7 @@ hr {
 .Testing-Center {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -83,20 +94,14 @@ hr {
 #File-upload-container {
   display: flex;
   flex-direction: column;
-  border-style: solid;
   padding: 15px;
+  border: 0.25px solid rgb(189, 189, 189);
   border-radius: 10px;
-  border-color: rgb(189, 189, 189);
   padding-bottom: 10px;
 }
 
 #tolerance-window {
   margin-bottom: 0px;
-}
-
-#FileUploader {
-  border-color: rgb(176, 176, 176) !important;
-  color: rgba(19, 42, 74) !important;
 }
 
 #filesContainer {
@@ -159,8 +164,10 @@ button {
   margin: 0.5em;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
+  padding-left: 50px;
+  padding-right: 50px;
   font-size: 1em;
-  font-weight: bold;
+  /* font-weight: bold; */
   font-family: inherit;
   background-color: rgba(19, 42, 74);
   cursor: pointer;

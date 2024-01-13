@@ -64,8 +64,9 @@ function Modal() {
           </p>
           <div className='Testing-Center'>
             <ToggleSwitch toggle={toggle} setToggle={setToggle} />
+            <div className='vl'></div>
             <img className='clockIcon' src={Icon} />
-            <p>Select Tolerance Level</p>
+            <p> Select Tolerance Level</p>
           </div>
         </section>
         <section id='right-column'>
