@@ -40,10 +40,7 @@ function Modal() {
       <div id='modal-content'>
         <section id='left-column'>
           {/* Left column */}
-          {/* <div id='importNameContainer'> */}
-          {/* <label htmlFor='importName' className='BoldText'></label> */}
           <BasicSelect label='Select Import Name:' />
-          {/* </div> */}
           <hr />
           <p className='BoldText'>Select a manifest you'd like to import</p>
           <div id='File-upload-container'>
@@ -86,20 +83,6 @@ function Modal() {
                 <label className='BoldText'>Client:</label>
                 <div className='radio-buttons'>
                   <RadioButtons labels={['Single', 'Multiple']} />
-                  {/* <input
-                    type='radio'
-                    id='Single'
-                    name='socialDistancing'
-                    value='Single'
-                  />
-                  <label htmlFor='Single'>Single</label>
-                  <input
-                    type='radio'
-                    id='Multiple'
-                    name='socialDistancing'
-                    value='Multiple'
-                  />  */}
-                  {/* <label htmlFor='Multiple'>Multiple</label> */}
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter1'>Testing Center 1</label>
                     <div className='Testing-Center-Right'>

@@ -25,18 +25,6 @@ export default function RadioButtons({ labels }: RadioProps) {
         defaultValue='yes'
       >
         {RadioComponents}
-        {/* <FormControlLabel
-          value='Yes'
-          control={<Radio />}
-          label='Yes'
-          labelPlacement='end'
-        />
-        <FormControlLabel
-          value='No'
-          control={<Radio />}
-          label='No'
-          labelPlacement='end'
-        /> */}
       </RadioGroup>
     </FormControl>
   );
