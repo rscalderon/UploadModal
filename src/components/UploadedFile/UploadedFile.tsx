@@ -8,9 +8,10 @@ interface Props {
 }
 
 function UploadedFile({ file }: Props) {
+  // Format input file size to appropriate units
   const sizeCalc = (size: number): string => {
-    if (size > 1000000) return size / 1000000 + ' MB';
-    if (size > 1000) return size / 1000 + ' KB';
+    if (size > 1000000) return Math.round(size / 100000) / 10 + ' MB';
+    if (size > 1000) return Math.round(size / 100) / 10 + ' KB';
     return size + ' bytes';
   };
   const fileSize = sizeCalc(file.size);

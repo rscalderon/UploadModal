@@ -6,10 +6,11 @@ import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 
 interface SelectProps {
+  maxWidth?: number;
   label: string;
 }
 
-export default function BasicSelect({ label }: SelectProps) {
+export default function BasicSelect({ label, maxWidth }: SelectProps) {
   const [value, setValue] = React.useState('');
 
   const handleChange = (event: SelectChangeEvent) => {
@@ -17,7 +18,7 @@ export default function BasicSelect({ label }: SelectProps) {
   };
 
   return (
-    <Box sx={{ minWidth: 120 }}>
+    <Box sx={maxWidth ? { maxWidth: maxWidth } : { maxWidth: 1000 }}>
       <FormControl fullWidth>
         <InputLabel id='demo-simple-select-label'>{label}</InputLabel>
         <Select

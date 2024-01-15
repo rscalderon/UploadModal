@@ -92,28 +92,28 @@ function Modal() {
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter1'>Testing Center 1</label>
                     <div className='Testing-Center-Right'>
-                      <BasicSelect label='Select Client' />
+                      <BasicSelect maxWidth={150} label='Select Client' />
                       <img className='clockIcon' src={Icon} />
                     </div>
                   </div>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter2'>Testing Center 2</label>
                     <div className='Testing-Center-Right'>
-                      <BasicSelect label='Select Client' />
+                      <BasicSelect maxWidth={150} label='Select Client' />
                       <img className='clockIcon' src={Icon} />
                     </div>
                   </div>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter3'>Testing Center 3</label>
                     <div className='Testing-Center-Right'>
-                      <BasicSelect label='Select Client' />
+                      <BasicSelect maxWidth={150} label='Select Client' />
                       <img className='clockIcon' src={Icon} />
                     </div>
                   </div>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter4'>Testing Center 4</label>
                     <div className='Testing-Center-Right'>
-                      <BasicSelect label='Select Client' />
+                      <BasicSelect maxWidth={150} label='Select Client' />
                       <img className='clockIcon' src={Icon} />
                     </div>
                   </div>
