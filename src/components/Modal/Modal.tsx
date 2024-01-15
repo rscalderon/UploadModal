@@ -5,6 +5,7 @@ import UploadedFile from '../UploadedFile/UploadedFile';
 import Upload from '../Upload/Upload';
 import ToggleSwitch from '../Switch/Switch';
 import BasicSelect from '../Select/Select';
+import RadioButton from '../RadioButton/RadioButton';
 
 import Icon from '../../assets/Icon.png';
 import CloseButton from '../../assets/CloseButton.png';
@@ -76,6 +77,7 @@ function Modal() {
               Split schedule using social distancing?
             </label>
             <div className='radio-buttons'>
+              <RadioButton />
               <input
                 type='radio'
                 id='yes'
