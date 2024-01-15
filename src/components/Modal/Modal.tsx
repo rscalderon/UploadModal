@@ -85,7 +85,10 @@ function Modal() {
               <div id='client-form'>
                 <label className='BoldText'>Client:</label>
                 <div className='radio-buttons'>
-                  <RadioButtons labels={['Single', 'Multiple']} />
+                  <RadioButtons
+                    groupLabel='Client'
+                    labels={['Single', 'Multiple']}
+                  />
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter1'>Testing Center 1</label>
                     <div className='Testing-Center-Right'>
