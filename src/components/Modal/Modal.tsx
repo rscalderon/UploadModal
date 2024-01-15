@@ -74,7 +74,10 @@ function Modal() {
               Split schedule using social distancing?
             </label>
             <div className='radio-buttons'>
-              <RadioButtons labels={['Yes', 'No']} />
+              <RadioButtons
+                groupLabel='Split-schedule-using-social-distancing'
+                labels={['Yes', 'No']}
+              />
               <hr />
               <p className='BoldText'>Location Checking:</p>
               <p className='green'>All Available!</p>
