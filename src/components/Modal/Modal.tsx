@@ -77,7 +77,7 @@ function Modal() {
               Split schedule using social distancing?
             </label>
             <div className='radio-buttons'>
-              <RadioButtons />
+              <RadioButtons labels={['Yes', 'No']} />
               <hr />
               <p className='BoldText'>Location Checking:</p>
               <p className='green'>All Available!</p>
@@ -85,7 +85,8 @@ function Modal() {
               <div id='client-form'>
                 <label className='BoldText'>Client:</label>
                 <div className='radio-buttons'>
-                  <input
+                  <RadioButtons labels={['Single', 'Multiple']} />
+                  {/* <input
                     type='radio'
                     id='Single'
                     name='socialDistancing'
@@ -97,8 +98,8 @@ function Modal() {
                     id='Multiple'
                     name='socialDistancing'
                     value='Multiple'
-                  />
-                  <label htmlFor='Multiple'>Multiple</label>
+                  />  */}
+                  {/* <label htmlFor='Multiple'>Multiple</label> */}
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter1'>Testing Center 1</label>
                     <div className='Testing-Center-Right'>

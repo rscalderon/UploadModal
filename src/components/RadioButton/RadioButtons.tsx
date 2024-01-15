@@ -2,12 +2,20 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
-// import FormLabel from '@mui/material/FormLabel';
 
-interface RadioProps {}
+interface RadioProps {
+  labels: string[];
+}
 
-export default function RadioButtons() {
-  
+export default function RadioButtons({ labels }: RadioProps) {
+  const RadioComponents = labels.map((label) => (
+    <FormControlLabel
+      value={label}
+      control={<Radio />}
+      label={label}
+      labelPlacement='end'
+    />
+  ));
   return (
     <FormControl>
       <RadioGroup
@@ -16,7 +24,8 @@ export default function RadioButtons() {
         name='position'
         defaultValue='yes'
       >
-        <FormControlLabel
+        {RadioComponents}
+        {/* <FormControlLabel
           value='Yes'
           control={<Radio />}
           label='Yes'
@@ -27,7 +36,7 @@ export default function RadioButtons() {
           control={<Radio />}
           label='No'
           labelPlacement='end'
-        />
+        /> */}
       </RadioGroup>
     </FormControl>
   );
