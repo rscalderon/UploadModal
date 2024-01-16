@@ -3,6 +3,10 @@
   color: lightgray;
 }
 
+.uploaded-container hr {
+  min-width: 99%;
+}
+
 .Uploaded-File-Logo {
   max-height: 2rem;
   margin-right: 10px;

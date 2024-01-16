@@ -21,7 +21,11 @@ function Modal() {
 
   // Build array of file components from list of uploaded files
   const fileComponents = Object.values(files).map((file: any, i) => (
-    <UploadedFile file={file} key={`File-${i}-${file}`} />
+    <>
+      <hr />
+      <UploadedFile file={file} key={`File-${i}-${file}`} />
+      {i + 1 === Object.values(files).length ? <hr /> : ''}
+    </>
   ));
 
   // handle submission data

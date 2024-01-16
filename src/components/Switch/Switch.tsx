@@ -57,13 +57,13 @@ interface ToggleProps {
 export default function ToggleSwitch({ toggle, setToggle }: ToggleProps) {
   return (
     <FormGroup>
-      <Stack direction='row' spacing={1} alignItems='center'>
+      <Stack direction='row' spacing={1} alignItems='flex-start'>
         <AntSwitch
           defaultChecked
           inputProps={{ 'aria-label': 'ant design' }}
           onClick={() => (toggle === 'ON' ? setToggle('OFF') : setToggle('ON'))}
         />
-        <Typography>Toggle {toggle}</Typography>
+        <Typography fontSize={'10px'}>Toggle {toggle}</Typography>
       </Stack>
     </FormGroup>
   );

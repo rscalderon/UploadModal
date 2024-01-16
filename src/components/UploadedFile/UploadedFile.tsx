@@ -17,7 +17,6 @@ function UploadedFile({ file }: Props) {
   const fileSize = sizeCalc(file.size);
   return (
     <div className='uploaded-container'>
-      <hr />
       <div className='UploadedFile'>
         <img src={UploadedImg} className='Uploaded-File-Logo' />
         <div>

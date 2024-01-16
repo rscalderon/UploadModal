@@ -3,12 +3,12 @@
   font-size: x-small;
 }
 
-#import-hr {
-  max-width: 100px;
-}
-
 p {
   padding-bottom: 0.5em;
+}
+
+#filesContainer hr {
+  min-width: 99%;
 }
 
 .clockIcon {
@@ -67,10 +67,21 @@ h1 {
   margin-bottom: 0px;
 }
 
+#left-column hr {
+  margin-left: 0;
+  max-width: 210px;
+}
+
+#right-column hr {
+  margin-left: 0;
+  max-width: 210px;
+}
+
 hr {
-  max-width: 100%;
   margin-bottom: 10px;
   margin-top: 10px;
+  background: transparent;
+  border-top: 1px solid whitesmoke;
 }
 
 .Testing-Center {
@@ -112,7 +123,7 @@ hr {
 }
 
 #header-container hr {
-  max-width: 300px;
+  max-width: 220px;
 }
 
 #modal-header {
