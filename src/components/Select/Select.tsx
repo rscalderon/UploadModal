@@ -35,11 +35,13 @@ export default function BasicSelect({ label, maxWidth }: SelectProps) {
     <ThemeProvider theme={theme}>
       <Box sx={maxWidth ? { maxWidth: maxWidth } : { maxWidth: 1000 }}>
         <FormControl fullWidth>
-          <InputLabel id='demo-simple-select-label'>{label}</InputLabel>
+          <InputLabel className='demo-simple-select-label'>{label}</InputLabel>
           <Select
-            SelectDisplayProps={{
-              style: { paddingTop: 0, paddingBottom: 0 },
-            }}
+            SelectDisplayProps={
+              {
+                // style: { paddingTop: 0, paddingBottom: 0 },
+              }
+            }
             labelId='demo-simple-select-label'
             id='demo-simple-select'
             value={value}
