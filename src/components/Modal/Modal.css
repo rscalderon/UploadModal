@@ -1,6 +1,14 @@
 #root {
   margin: auto;
-  font-size: small;
+  font-size: x-small;
+}
+
+#import-hr {
+  max-width: 100px;
+}
+
+p {
+  padding-bottom: 0.5em;
 }
 
 .clockIcon {
@@ -10,7 +18,7 @@
 
 #upload-modal {
   background-color: rgb(255, 255, 255);
-  padding: 2em;
+  padding: 1.7em;
   padding-bottom: 3em;
   border-radius: 20px;
   height: fit-content;
@@ -42,10 +50,6 @@
   border-radius: 50px;
 }
 
-.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
-  border-radius: 10px !important;
-}
-
 .BoldText {
   font-weight: bold;
   margin-top: 2px;
@@ -53,12 +57,12 @@
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 0;
   text-align: center;
 }
 
-#UploadButton {
+#upload-button {
   align-self: center;
   margin-bottom: 0px;
 }
@@ -150,6 +154,11 @@ body {
   min-height: 100vh;
 }
 
+#modal-footer p {
+  font-size: small;
+  margin: 8px;
+}
+
 #cancel-button {
   border: 2px solid rgb(255, 167, 60);
   background-color: rgb(255, 255, 255);
@@ -160,12 +169,13 @@ button {
   border-radius: 8px;
   margin: 0.5em;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   padding-left: 50px;
   padding-right: 50px;
   font-size: 1em;
   font-family: inherit;
-  background-color: rgba(19, 42, 74);
+  background-color: rgba(36, 60, 107);
   cursor: pointer;
   transition: border-color 0.25s;
 }

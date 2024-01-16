@@ -6,7 +6,7 @@ function Upload() {
   return (
     <div id='UploadFile'>
       <img id='UploadImg' src={UploadImg} />
-      <p id='FileUploader'>
+      <p id='file-uploader'>
         Drag & Drop Here Or <span className='BoldText'>Browse</span>
       </p>
     </div>

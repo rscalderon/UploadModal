@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
 import { FileUploader } from 'react-drag-drop-files';
 
 import UploadedFile from '../UploadedFile/UploadedFile';
@@ -24,8 +24,13 @@ function Modal() {
     <UploadedFile file={file} key={`File-${i}-${file}`} />
   ));
 
+  // handle submission data
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    console.log(e);
+  };
   return (
-    <div id='upload-modal'>
+    <form id='upload-modal' onSubmit={handleSubmit}>
       {/* Modal header */}
       <header id='modal-header'>
         <button id='close-button' onClick={() => console.log('Close modal')}>
@@ -45,12 +50,12 @@ function Modal() {
           <p className='BoldText'>Select a manifest you'd like to import</p>
           <div id='File-upload-container'>
             <FileUploader
-              id='FileUploader'
+              id='file-uploader'
               handleChange={handleChange}
               multiple={true}
               children={<Upload />}
             />
-            <button id='UploadButton'>Upload Manifest</button>
+            <button id='upload-button'>Upload Manifest</button>
           </div>
           <div id='filesContainer'>{fileComponents}</div>
           <hr />
@@ -92,28 +97,28 @@ function Modal() {
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter1'>Testing Center 1</label>
                     <div className='Testing-Center-Right'>
-                      <BasicSelect maxWidth={150} label='Select Client' />
+                      <BasicSelect maxWidth={115} label='Select Client' />
                       <img className='clockIcon' src={Icon} />
                     </div>
                   </div>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter2'>Testing Center 2</label>
                     <div className='Testing-Center-Right'>
-                      <BasicSelect maxWidth={150} label='Select Client' />
+                      <BasicSelect maxWidth={115} label='Select Client' />
                       <img className='clockIcon' src={Icon} />
                     </div>
                   </div>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter3'>Testing Center 3</label>
                     <div className='Testing-Center-Right'>
-                      <BasicSelect maxWidth={150} label='Select Client' />
+                      <BasicSelect maxWidth={115} label='Select Client' />
                       <img className='clockIcon' src={Icon} />
                     </div>
                   </div>
                   <div className='Testing-Center'>
                     <label htmlFor='TestingCenter4'>Testing Center 4</label>
                     <div className='Testing-Center-Right'>
-                      <BasicSelect maxWidth={150} label='Select Client' />
+                      <BasicSelect maxWidth={115} label='Select Client' />
                       <img className='clockIcon' src={Icon} />
                     </div>
                   </div>
@@ -127,14 +132,14 @@ function Modal() {
         <p className='BoldText'>
           Data in the import file is correct. Please press Continue to import.
         </p>
-        <button onClick={() => console.log('Continue import')}>
+        <button onClick={() => console.log('Continue import')} type='submit'>
           Continue Import
         </button>
         <button id='cancel-button' onClick={() => console.log('Close modal')}>
           Cancel
         </button>
       </footer>
-    </div>
+    </form>
   );
 }
 

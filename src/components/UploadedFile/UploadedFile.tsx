@@ -16,19 +16,19 @@ function UploadedFile({ file }: Props) {
   };
   const fileSize = sizeCalc(file.size);
   return (
-    <>
+    <div className='uploaded-container'>
       <hr />
       <div className='UploadedFile'>
-        <div className='Left-Uploaded-File'>
-          <img src={UploadedImg} className='Uploaded-File-Logo' />
-          <p>{file.name}</p>
-        </div>
+        <img src={UploadedImg} className='Uploaded-File-Logo' />
         <div>
-          <p>{fileSize}</p>
+          <div className='Top-Uploaded-File'>
+            <p>{file.name}</p>
+            <p>{fileSize}</p>
+          </div>
+          <img className='Progress-Bar' src={ProgressBar} />
         </div>
       </div>
-      <img className='Progress-Bar' src={ProgressBar} />
-    </>
+    </div>
   );
 }
 

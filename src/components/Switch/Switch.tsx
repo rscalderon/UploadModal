@@ -5,6 +5,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 const AntSwitch = styled(Switch)(({ theme }) => ({
+  fontSize: 1,
   width: 28,
   height: 16,
   padding: 0,
