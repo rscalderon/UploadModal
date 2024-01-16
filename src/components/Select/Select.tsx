@@ -15,6 +15,9 @@ const theme = createTheme({
   palette: {
     text: { primary: 'rgb(19, 42, 74)', secondary: 'rgb(19, 42, 74)' },
   },
+  shape: {
+    borderRadius: 10,
+  },
   typography: {
     fontSize: 10,
     fontWeightRegular: 500,
@@ -34,6 +37,9 @@ export default function BasicSelect({ label, maxWidth }: SelectProps) {
         <FormControl fullWidth>
           <InputLabel id='demo-simple-select-label'>{label}</InputLabel>
           <Select
+            SelectDisplayProps={{
+              style: { paddingTop: 0, paddingBottom: 0 },
+            }}
             labelId='demo-simple-select-label'
             id='demo-simple-select'
             value={value}

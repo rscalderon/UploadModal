@@ -51,8 +51,8 @@ function Modal() {
           {/* Left column */}
           <BasicSelect label='Select Import Name:' />
           <hr />
-          <p className='BoldText'>Select a manifest you'd like to import</p>
-          <div id='File-upload-container'>
+          <p className='bold-text'>Select a manifest you'd like to import</p>
+          <div id='file-upload-container'>
             <FileUploader
               id='file-uploader'
               handleChange={handleChange}
@@ -61,69 +61,69 @@ function Modal() {
             />
             <button id='upload-button'>Upload Manifest</button>
           </div>
-          <div id='filesContainer'>{fileComponents}</div>
+          <div id='files-container'>{fileComponents}</div>
           <hr />
-          <p className='BoldText'>Elapse Data Checking</p>
+          <p className='bold-text'>Elapse Data Checking</p>
           <p className='green'>No Elapsed Dates!</p>
           <hr />
-          <p className='BoldText' id='tolerance-window'>
+          <p className='bold-text' id='tolerance-window'>
             Tolerance Window:
           </p>
-          <div className='Testing-Center'>
+          <div className='testing-center'>
             <ToggleSwitch toggle={toggle} setToggle={setToggle} />
             <div className='vl'></div>
-            <img className='clockIcon' src={Icon} />
+            <img className='clock-icon' src={Icon} />
             <p> Select Tolerance Level</p>
           </div>
         </section>
         <section id='right-column'>
           {/* Right column */}
           <div className='form-group'>
-            <label className='BoldText'>
+            <label className='bold-text'>
               Split schedule using social distancing?
             </label>
             <div className='radio-buttons'>
               <RadioButtons
-                groupLabel='Split-schedule-using-social-distancing'
+                groupLabel='split-schedule-using-social-distancing'
                 labels={['Yes', 'No']}
               />
               <hr />
-              <p className='BoldText'>Location Checking:</p>
+              <p className='bold-text'>Location Checking:</p>
               <p className='green'>All Available!</p>
               <hr />
               <div id='client-form'>
-                <label className='BoldText'>Client:</label>
+                <label className='bold-text'>Client:</label>
                 <div className='radio-buttons'>
                   <RadioButtons
                     groupLabel='Client'
                     labels={['Single', 'Multiple']}
                   />
-                  <div className='Testing-Center'>
+                  <div className='testing-center'>
                     <label htmlFor='TestingCenter1'>Testing Center 1</label>
-                    <div className='Testing-Center-Right'>
+                    <div className='testing-center-right'>
                       <BasicSelect maxWidth={115} label='Select Client' />
-                      <img className='clockIcon' src={Icon} />
+                      <img className='clock-icon' src={Icon} />
                     </div>
                   </div>
-                  <div className='Testing-Center'>
+                  <div className='testing-center'>
                     <label htmlFor='TestingCenter2'>Testing Center 2</label>
-                    <div className='Testing-Center-Right'>
+                    <div className='testing-center-right'>
                       <BasicSelect maxWidth={115} label='Select Client' />
-                      <img className='clockIcon' src={Icon} />
+                      <img className='clock-icon' src={Icon} />
                     </div>
                   </div>
-                  <div className='Testing-Center'>
+                  <div className='testing-center'>
                     <label htmlFor='TestingCenter3'>Testing Center 3</label>
-                    <div className='Testing-Center-Right'>
+                    <div className='testing-center-right'>
                       <BasicSelect maxWidth={115} label='Select Client' />
-                      <img className='clockIcon' src={Icon} />
+                      <img className='clock-icon' src={Icon} />
                     </div>
                   </div>
-                  <div className='Testing-Center'>
+                  <div className='testing-center'>
                     <label htmlFor='TestingCenter4'>Testing Center 4</label>
-                    <div className='Testing-Center-Right'>
+                    <div className='testing-center-right'>
                       <BasicSelect maxWidth={115} label='Select Client' />
-                      <img className='clockIcon' src={Icon} />
+                      <img className='clock-icon' src={Icon} />
                     </div>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ function Modal() {
         </section>
       </div>
       <footer id='modal-footer'>
-        <p className='BoldText'>
+        <p className='bold-text'>
           Data in the import file is correct. Please press Continue to import.
         </p>
         <button onClick={() => console.log('Continue import')} type='submit'>

@@ -7,11 +7,11 @@ p {
   padding-bottom: 0.5em;
 }
 
-#filesContainer hr {
+#files-container hr {
   min-width: 99%;
 }
 
-.clockIcon {
+.clock-icon {
   max-width: 30px;
   max-height: 30px;
 }
@@ -33,7 +33,7 @@ p {
   margin-right: 15px;
 }
 
-.Testing-Center-Right {
+.testing-center-right {
   justify-self: end;
   display: flex;
   align-items: center;
@@ -50,7 +50,7 @@ p {
   border-radius: 50px;
 }
 
-.BoldText {
+.bold-text {
   font-weight: bold;
   margin-top: 2px;
   margin-bottom: 2px;
@@ -84,7 +84,7 @@ hr {
   border-top: 1px solid whitesmoke;
 }
 
-.Testing-Center {
+.testing-center {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -104,7 +104,7 @@ hr {
   padding: 5px;
 }
 
-#File-upload-container {
+#file-upload-container {
   display: flex;
   flex-direction: column;
   padding: 15px;
@@ -117,7 +117,7 @@ hr {
   margin-bottom: 0px;
 }
 
-#filesContainer {
+#files-container {
   max-height: 80px;
   overflow: auto;
 }
