@@ -23,6 +23,7 @@ p {
   border-radius: 20px;
   height: fit-content;
   width: 75vw;
+  max-width: 800px;
 }
 
 .vl {
